@@ -11,7 +11,8 @@
 
 @interface MViewController ()
 @property (nonatomic, retain) MProgressAlertView* progressAlertView;
--(void) onTimer:(NSTimer*)sender;
+@property (nonatomic, retain) NSTimer* timer;
+-(void) onTimer:(id)sender;
 
 @end
 
@@ -31,7 +32,7 @@
 
 - (IBAction)onAlert:(UIButton*)sender {
     
-    [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(onTimer:) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(onTimer:) userInfo:nil repeats:YES];
     
     NSString* title = @"Title";
     NSString* message = @"message message message message !";
@@ -50,17 +51,24 @@
             self.progressAlertView = [[[MProgressAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"Button 1", @"Button 2", @"Button 3", nil] autorelease];
             break;
     }
+    self.progressAlertView.delegate = self;
     [self.progressAlertView show];
 }
 
 -(void)onTimer:(NSTimer*)sender
 {
-    self.progressAlertView.progressView.progress += 0.01;
+    self.progressAlertView.progressView.progress += 0.01f;
     self.progressAlertView.progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)(self.progressAlertView.progressView.progress * 100)];
     if (self.progressAlertView.progressView.progress >= 1) {
-        [self.progressAlertView dismissWithClickedButtonIndex:0 animated:YES];
-        [sender invalidate];
+        [self.progressAlertView dismissWithClickedButtonIndex:-1 animated:YES];
     }
+}
+
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    [self.timer invalidate];
+    self.timer = nil;
+    self.progressAlertView = nil;
 }
 
 @end

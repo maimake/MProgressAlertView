@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MViewController : UIViewController
+@interface MViewController : UIViewController<UIAlertViewDelegate>
 - (IBAction)onAlert:(UIButton*)sender;
 
 @end
