@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CADD8941756418C00BE83FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CADD8931756418C00BE83FD /* UIKit.framework */; };
+		2CADD8961756418C00BE83FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CADD8951756418C00BE83FD /* Foundation.framework */; };
+		2CADD8981756418C00BE83FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CADD8971756418C00BE83FD /* CoreGraphics.framework */; };
+		2CADD89E1756418C00BE83FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CADD89C1756418C00BE83FD /* InfoPlist.strings */; };
+		2CADD8A01756418C00BE83FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADD89F1756418C00BE83FD /* main.m */; };
+		2CADD8A41756418C00BE83FD /* MAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADD8A31756418C00BE83FD /* MAppDelegate.m */; };
+		2CADD8A61756418C00BE83FD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CADD8A51756418C00BE83FD /* Default.png */; };
+		2CADD8A81756418C00BE83FD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CADD8A71756418C00BE83FD /* Default@2x.png */; };
+		2CADD8AA1756418C00BE83FD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CADD8A91756418C00BE83FD /* Default-568h@2x.png */; };
+		2CADD8AD1756418C00BE83FD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CADD8AB1756418C00BE83FD /* MainStoryboard.storyboard */; };
+		2CADD8B01756418C00BE83FD /* MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADD8AF1756418C00BE83FD /* MViewController.m */; };
+		2CADD8B81756418D00BE83FD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CADD8B71756418D00BE83FD /* SenTestingKit.framework */; };
+		2CADD8B91756418D00BE83FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CADD8931756418C00BE83FD /* UIKit.framework */; };
+		2CADD8BA1756418D00BE83FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CADD8951756418C00BE83FD /* Foundation.framework */; };
+		2CADD8C21756418D00BE83FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CADD8C01756418D00BE83FD /* InfoPlist.strings */; };
+		2CADD8C51756418D00BE83FD /* MProgressAlertViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADD8C41756418D00BE83FD /* MProgressAlertViewDemoTests.m */; };
+		2CADD8D4175641E400BE83FD /* MProgressAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADD8D3175641E400BE83FD /* MProgressAlertView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CADD8BB1756418D00BE83FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CADD8881756418C00BE83FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CADD88F1756418C00BE83FD;
+			remoteInfo = MProgressAlertViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CADD8901756418C00BE83FD /* MProgressAlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MProgressAlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CADD8931756418C00BE83FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2CADD8951756418C00BE83FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CADD8971756418C00BE83FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2CADD89B1756418C00BE83FD /* MProgressAlertViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MProgressAlertViewDemo-Info.plist"; sourceTree = "<group>"; };
+		2CADD89D1756418C00BE83FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CADD89F1756418C00BE83FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CADD8A11756418C00BE83FD /* MProgressAlertViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MProgressAlertViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		2CADD8A21756418C00BE83FD /* MAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAppDelegate.h; sourceTree = "<group>"; };
+		2CADD8A31756418C00BE83FD /* MAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAppDelegate.m; sourceTree = "<group>"; };
+		2CADD8A51756418C00BE83FD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2CADD8A71756418C00BE83FD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2CADD8A91756418C00BE83FD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2CADD8AC1756418C00BE83FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2CADD8AE1756418C00BE83FD /* MViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MViewController.h; sourceTree = "<group>"; };
+		2CADD8AF1756418C00BE83FD /* MViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MViewController.m; sourceTree = "<group>"; };
+		2CADD8B61756418D00BE83FD /* MProgressAlertViewDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MProgressAlertViewDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CADD8B71756418D00BE83FD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2CADD8BF1756418D00BE83FD /* MProgressAlertViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MProgressAlertViewDemoTests-Info.plist"; sourceTree = "<group>"; };
+		2CADD8C11756418D00BE83FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CADD8C31756418D00BE83FD /* MProgressAlertViewDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MProgressAlertViewDemoTests.h; sourceTree = "<group>"; };
+		2CADD8C41756418D00BE83FD /* MProgressAlertViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MProgressAlertViewDemoTests.m; sourceTree = "<group>"; };
+		2CADD8D2175641E400BE83FD /* MProgressAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MProgressAlertView.h; sourceTree = "<group>"; };
+		2CADD8D3175641E400BE83FD /* MProgressAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MProgressAlertView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CADD88D1756418C00BE83FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CADD8941756418C00BE83FD /* UIKit.framework in Frameworks */,
+				2CADD8961756418C00BE83FD /* Foundation.framework in Frameworks */,
+				2CADD8981756418C00BE83FD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CADD8B21756418D00BE83FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CADD8B81756418D00BE83FD /* SenTestingKit.framework in Frameworks */,
+				2CADD8B91756418D00BE83FD /* UIKit.framework in Frameworks */,
+				2CADD8BA1756418D00BE83FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CADD8871756418C00BE83FD = {
+			isa = PBXGroup;
+			children = (
+				2CADD8991756418C00BE83FD /* MProgressAlertViewDemo */,
+				2CADD8BD1756418D00BE83FD /* MProgressAlertViewDemoTests */,
+				2CADD8921756418C00BE83FD /* Frameworks */,
+				2CADD8911756418C00BE83FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CADD8911756418C00BE83FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CADD8901756418C00BE83FD /* MProgressAlertViewDemo.app */,
+				2CADD8B61756418D00BE83FD /* MProgressAlertViewDemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CADD8921756418C00BE83FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CADD8931756418C00BE83FD /* UIKit.framework */,
+				2CADD8951756418C00BE83FD /* Foundation.framework */,
+				2CADD8971756418C00BE83FD /* CoreGraphics.framework */,
+				2CADD8B71756418D00BE83FD /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CADD8991756418C00BE83FD /* MProgressAlertViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2CADD8D1175641E400BE83FD /* MProgressAlertView */,
+				2CADD8A21756418C00BE83FD /* MAppDelegate.h */,
+				2CADD8A31756418C00BE83FD /* MAppDelegate.m */,
+				2CADD8AB1756418C00BE83FD /* MainStoryboard.storyboard */,
+				2CADD8AE1756418C00BE83FD /* MViewController.h */,
+				2CADD8AF1756418C00BE83FD /* MViewController.m */,
+				2CADD89A1756418C00BE83FD /* Supporting Files */,
+			);
+			path = MProgressAlertViewDemo;
+			sourceTree = "<group>";
+		};
+		2CADD89A1756418C00BE83FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CADD89B1756418C00BE83FD /* MProgressAlertViewDemo-Info.plist */,
+				2CADD89C1756418C00BE83FD /* InfoPlist.strings */,
+				2CADD89F1756418C00BE83FD /* main.m */,
+				2CADD8A11756418C00BE83FD /* MProgressAlertViewDemo-Prefix.pch */,
+				2CADD8A51756418C00BE83FD /* Default.png */,
+				2CADD8A71756418C00BE83FD /* Default@2x.png */,
+				2CADD8A91756418C00BE83FD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CADD8BD1756418D00BE83FD /* MProgressAlertViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CADD8C31756418D00BE83FD /* MProgressAlertViewDemoTests.h */,
+				2CADD8C41756418D00BE83FD /* MProgressAlertViewDemoTests.m */,
+				2CADD8BE1756418D00BE83FD /* Supporting Files */,
+			);
+			path = MProgressAlertViewDemoTests;
+			sourceTree = "<group>";
+		};
+		2CADD8BE1756418D00BE83FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CADD8BF1756418D00BE83FD /* MProgressAlertViewDemoTests-Info.plist */,
+				2CADD8C01756418D00BE83FD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CADD8D1175641E400BE83FD /* MProgressAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				2CADD8D2175641E400BE83FD /* MProgressAlertView.h */,
+				2CADD8D3175641E400BE83FD /* MProgressAlertView.m */,
+			);
+			path = MProgressAlertView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CADD88F1756418C00BE83FD /* MProgressAlertViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CADD8C81756418D00BE83FD /* Build configuration list for PBXNativeTarget "MProgressAlertViewDemo" */;
+			buildPhases = (
+				2CADD88C1756418C00BE83FD /* Sources */,
+				2CADD88D1756418C00BE83FD /* Frameworks */,
+				2CADD88E1756418C00BE83FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MProgressAlertViewDemo;
+			productName = MProgressAlertViewDemo;
+			productReference = 2CADD8901756418C00BE83FD /* MProgressAlertViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CADD8B51756418D00BE83FD /* MProgressAlertViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CADD8CB1756418D00BE83FD /* Build configuration list for PBXNativeTarget "MProgressAlertViewDemoTests" */;
+			buildPhases = (
+				2CADD8B11756418D00BE83FD /* Sources */,
+				2CADD8B21756418D00BE83FD /* Frameworks */,
+				2CADD8B31756418D00BE83FD /* Resources */,
+				2CADD8B41756418D00BE83FD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CADD8BC1756418D00BE83FD /* PBXTargetDependency */,
+			);
+			name = MProgressAlertViewDemoTests;
+			productName = MProgressAlertViewDemoTests;
+			productReference = 2CADD8B61756418D00BE83FD /* MProgressAlertViewDemoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CADD8881756418C00BE83FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = M;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = MaiMake;
+			};
+			buildConfigurationList = 2CADD88B1756418C00BE83FD /* Build configuration list for PBXProject "MProgressAlertViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2CADD8871756418C00BE83FD;
+			productRefGroup = 2CADD8911756418C00BE83FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CADD88F1756418C00BE83FD /* MProgressAlertViewDemo */,
+				2CADD8B51756418D00BE83FD /* MProgressAlertViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CADD88E1756418C00BE83FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CADD89E1756418C00BE83FD /* InfoPlist.strings in Resources */,
+				2CADD8A61756418C00BE83FD /* Default.png in Resources */,
+				2CADD8A81756418C00BE83FD /* Default@2x.png in Resources */,
+				2CADD8AA1756418C00BE83FD /* Default-568h@2x.png in Resources */,
+				2CADD8AD1756418C00BE83FD /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CADD8B31756418D00BE83FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CADD8C21756418D00BE83FD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CADD8B41756418D00BE83FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CADD88C1756418C00BE83FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CADD8A01756418C00BE83FD /* main.m in Sources */,
+				2CADD8A41756418C00BE83FD /* MAppDelegate.m in Sources */,
+				2CADD8B01756418C00BE83FD /* MViewController.m in Sources */,
+				2CADD8D4175641E400BE83FD /* MProgressAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CADD8B11756418D00BE83FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CADD8C51756418D00BE83FD /* MProgressAlertViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CADD8BC1756418D00BE83FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CADD88F1756418C00BE83FD /* MProgressAlertViewDemo */;
+			targetProxy = 2CADD8BB1756418D00BE83FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CADD89C1756418C00BE83FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CADD89D1756418C00BE83FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2CADD8AB1756418C00BE83FD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CADD8AC1756418C00BE83FD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		2CADD8C01756418D00BE83FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CADD8C11756418D00BE83FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CADD8C61756418D00BE83FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2CADD8C71756418D00BE83FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CADD8C91756418D00BE83FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MProgressAlertViewDemo/MProgressAlertViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MProgressAlertViewDemo/MProgressAlertViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2CADD8CA1756418D00BE83FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MProgressAlertViewDemo/MProgressAlertViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MProgressAlertViewDemo/MProgressAlertViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2CADD8CC1756418D00BE83FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MProgressAlertViewDemo.app/MProgressAlertViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MProgressAlertViewDemo/MProgressAlertViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MProgressAlertViewDemoTests/MProgressAlertViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2CADD8CD1756418D00BE83FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MProgressAlertViewDemo.app/MProgressAlertViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MProgressAlertViewDemo/MProgressAlertViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MProgressAlertViewDemoTests/MProgressAlertViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CADD88B1756418C00BE83FD /* Build configuration list for PBXProject "MProgressAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CADD8C61756418D00BE83FD /* Debug */,
+				2CADD8C71756418D00BE83FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CADD8C81756418D00BE83FD /* Build configuration list for PBXNativeTarget "MProgressAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CADD8C91756418D00BE83FD /* Debug */,
+				2CADD8CA1756418D00BE83FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CADD8CB1756418D00BE83FD /* Build configuration list for PBXNativeTarget "MProgressAlertViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CADD8CC1756418D00BE83FD /* Debug */,
+				2CADD8CD1756418D00BE83FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CADD8881756418C00BE83FD /* Project object */;
+}
