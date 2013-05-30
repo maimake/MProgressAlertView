@@ -8,7 +8,7 @@
 
 //    The MIT License (MIT)
 //
-//    Copyright (c) 2013 MaiMake http://www.maimake.com || https://github.com/gentlezhou/MProgressAlertView
+//    Copyright (c) 2013 MaiMake http://www.maimake.com || https://github.com/maimake/MProgressAlertView
 //
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the "Software"), to deal

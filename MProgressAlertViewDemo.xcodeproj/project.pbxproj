@@ -23,7 +23,7 @@
 		2CADD8BA1756418D00BE83FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CADD8951756418C00BE83FD /* Foundation.framework */; };
 		2CADD8C21756418D00BE83FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CADD8C01756418D00BE83FD /* InfoPlist.strings */; };
 		2CADD8C51756418D00BE83FD /* MProgressAlertViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADD8C41756418D00BE83FD /* MProgressAlertViewDemoTests.m */; };
-		2CADD8D4175641E400BE83FD /* MProgressAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADD8D3175641E400BE83FD /* MProgressAlertView.m */; };
+		F48C85C4175708AE00C741E4 /* MProgressAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F48C85C3175708AE00C741E4 /* MProgressAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		2CADD8C11756418D00BE83FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CADD8C31756418D00BE83FD /* MProgressAlertViewDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MProgressAlertViewDemoTests.h; sourceTree = "<group>"; };
 		2CADD8C41756418D00BE83FD /* MProgressAlertViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MProgressAlertViewDemoTests.m; sourceTree = "<group>"; };
-		2CADD8D2175641E400BE83FD /* MProgressAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MProgressAlertView.h; sourceTree = "<group>"; };
-		2CADD8D3175641E400BE83FD /* MProgressAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MProgressAlertView.m; sourceTree = "<group>"; };
+		F48C85C2175708AE00C741E4 /* MProgressAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MProgressAlertView.h; sourceTree = "<group>"; };
+		F48C85C3175708AE00C741E4 /* MProgressAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MProgressAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 		2CADD8991756418C00BE83FD /* MProgressAlertViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2CADD8D1175641E400BE83FD /* MProgressAlertView */,
+				F48C85C1175708AE00C741E4 /* MProgressAlertView */,
 				2CADD8A21756418C00BE83FD /* MAppDelegate.h */,
 				2CADD8A31756418C00BE83FD /* MAppDelegate.m */,
 				2CADD8AB1756418C00BE83FD /* MainStoryboard.storyboard */,
@@ -164,14 +164,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2CADD8D1175641E400BE83FD /* MProgressAlertView */ = {
+		F48C85C1175708AE00C741E4 /* MProgressAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				2CADD8D2175641E400BE83FD /* MProgressAlertView.h */,
-				2CADD8D3175641E400BE83FD /* MProgressAlertView.m */,
+				F48C85C2175708AE00C741E4 /* MProgressAlertView.h */,
+				F48C85C3175708AE00C741E4 /* MProgressAlertView.m */,
 			);
 			path = MProgressAlertView;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -287,7 +287,7 @@
 				2CADD8A01756418C00BE83FD /* main.m in Sources */,
 				2CADD8A41756418C00BE83FD /* MAppDelegate.m in Sources */,
 				2CADD8B01756418C00BE83FD /* MViewController.m in Sources */,
-				2CADD8D4175641E400BE83FD /* MProgressAlertView.m in Sources */,
+				F48C85C4175708AE00C741E4 /* MProgressAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +466,7 @@
 				2CADD8CA1756418D00BE83FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CADD8CB1756418D00BE83FD /* Build configuration list for PBXNativeTarget "MProgressAlertViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +475,7 @@
 				2CADD8CD1756418D00BE83FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
