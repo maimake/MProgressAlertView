@@ -32,7 +32,8 @@
 
 - (IBAction)onAlert:(UIButton*)sender {
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(onTimer:) userInfo:nil repeats:YES];
+    NSTimeInterval interval = (sender.tag % 2) ? 0.03f : 0.1f;
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(onTimer:) userInfo:nil repeats:YES];
     
     NSString* title = @"Title";
     NSString* message = @"message message message message !";
@@ -45,10 +46,22 @@
             self.progressAlertView = [[[MProgressAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil] autorelease];
             break;
         case 3:
-            self.progressAlertView = [[[MProgressAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil] autorelease];
+            self.progressAlertView = [[[MProgressAlertView alloc] initWithTitle:title message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil] autorelease];
             break;
         case 4:
-            self.progressAlertView = [[[MProgressAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"Button 1", @"Button 2", @"Button 3", nil] autorelease];
+            self.progressAlertView = [[[MProgressAlertView alloc] initWithTitle:title message:nil delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"Button 1", @"Button 2", @"Button 3", nil] autorelease];
+            break;
+        case 5:
+            self.progressAlertView = [[[MProgressAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil] autorelease];
+            break;
+        case 6:
+            self.progressAlertView = [[[MProgressAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil] autorelease];
+            break;
+        case 7:
+            self.progressAlertView = [[[MProgressAlertView alloc] initWithTitle:nil message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil] autorelease];
+            break;
+        case 8:
+            self.progressAlertView = [[[MProgressAlertView alloc] initWithTitle:nil message:nil delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil] autorelease];
             break;
     }
     self.progressAlertView.delegate = self;

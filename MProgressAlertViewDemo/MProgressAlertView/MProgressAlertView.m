@@ -46,7 +46,7 @@
 {
     //super init
     if(!(!cancelButtonTitle && !otherButtonTitles))//有button
-        message = [message stringByAppendingString:@"\n\n"];
+        message = message ? [message stringByAppendingString:@"\n\n"] : @"\n";
     self = [super initWithTitle:title message:message delegate:delegate cancelButtonTitle:cancelButtonTitle otherButtonTitles:otherButtonTitles, nil];
     
     va_list args_list;
@@ -92,25 +92,26 @@
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    int idxLabel = 0;
-    for(UIView* subview in self.subviews)
-    {
-        if ([subview isKindOfClass:[UILabel class]]) {
-            if(++idxLabel == 2)//message label
-            {
-                float halfWidth = (self.bounds.size.width / 2.0);
-                if (self.numberOfButtons) {//有button
-                    self.progressView.center = CGPointMake(halfWidth - 30, CGRectGetMaxY(subview.frame));
-                    self.progressLabel.center = CGPointMake(self.bounds.size.width - 50, CGRectGetMaxY(subview.frame));
-                } else {//没button
-                    self.progressView.center = CGPointMake(halfWidth - 30, CGRectGetMaxY(subview.frame) + 25);
-                    self.progressLabel.center = CGPointMake(self.bounds.size.width - 50, CGRectGetMaxY(subview.frame) + 25);
-                }
+    
+    CGFloat offset = self.bounds.size.height;
+    
+    if (self.numberOfButtons) {//有button
+        
+        for(UIView* subview in self.subviews)
+        {
+            if ([subview isKindOfClass:NSClassFromString(@"UIAlertButton")]) {
+                offset = MIN(offset, subview.frame.origin.y);
             }
-            if(idxLabel >= 2)
-                break;
         }
+        
+        offset -= 20;
+    }else{//没有button
+        offset -= 50;
     }
+    
+    float halfWidth = (self.bounds.size.width / 2.0);
+    self.progressView.center = CGPointMake(halfWidth - 30, offset);
+    self.progressLabel.center = CGPointMake(self.bounds.size.width - 50, offset);
 }
 
 @end

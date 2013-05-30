@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -14,7 +14,7 @@
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZV-PW-h2B">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="alert with no button">
+                                <state key="normal" title="title &amp; msg &amp; no btn">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -27,7 +27,7 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13a-eW-8BI">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="alert with one button">
+                                <state key="normal" title="title &amp; msg &amp; btn">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,8 +39,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofb-2g-JKD">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="alert with two buttons">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="title &amp; no msg &amp; no btn">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -52,8 +52,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrf-GH-Xok">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="alert with multi buttons">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="title &amp; no msg &amp; btn">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -64,17 +64,84 @@
                                     <action selector="onAlert:" destination="2" eventType="touchUpInside" id="I1E-AF-DHg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFV-IF-oqE">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="no title; no msg; no btn">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAlert:" destination="2" eventType="touchUpInside" id="EUK-vW-fVK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFZ-EC-2DQ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="no title; no msg; btn">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAlert:" destination="2" eventType="touchUpInside" id="MLg-WH-Z4l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Progress Alert with:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2l-6j-cKT">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFL-gw-tNA">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="no title &amp; msg &amp; no btn">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAlert:" destination="2" eventType="touchUpInside" id="X3w-FD-sPf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7C3-tB-okE">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="no title &amp; msg &amp; btn">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAlert:" destination="2" eventType="touchUpInside" id="15g-eb-yLk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cZV-PW-h2B" firstAttribute="centerX" secondItem="13a-eW-8BI" secondAttribute="centerX" type="user" id="2bE-UR-Dcv"/>
-                            <constraint firstItem="Mrf-GH-Xok" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="67" id="Wjy-OI-OZq"/>
-                            <constraint firstItem="13a-eW-8BI" firstAttribute="top" secondItem="cZV-PW-h2B" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ihW-g2-khA"/>
-                            <constraint firstItem="Mrf-GH-Xok" firstAttribute="top" secondItem="Ofb-2g-JKD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jOI-xw-uX4"/>
-                            <constraint firstItem="cZV-PW-h2B" firstAttribute="centerX" secondItem="Ofb-2g-JKD" secondAttribute="centerX" type="user" id="oVm-MO-p54"/>
-                            <constraint firstItem="cZV-PW-h2B" firstAttribute="centerX" secondItem="Mrf-GH-Xok" secondAttribute="centerX" type="user" id="saI-QG-nDk"/>
-                            <constraint firstItem="cZV-PW-h2B" firstAttribute="top" secondItem="3" secondAttribute="top" constant="32" id="vo4-rB-LwF"/>
-                            <constraint firstItem="Ofb-2g-JKD" firstAttribute="top" secondItem="13a-eW-8BI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="xzD-bv-gc9"/>
+                            <constraint firstItem="cZV-PW-h2B" firstAttribute="baseline" secondItem="13a-eW-8BI" secondAttribute="baseline" type="default" id="0ze-Zq-c5L"/>
+                            <constraint firstItem="cZV-PW-h2B" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="DqU-Ji-ZUo"/>
+                            <constraint firstItem="jFV-IF-oqE" firstAttribute="trailing" secondItem="wFL-gw-tNA" secondAttribute="trailing" type="default" id="Ilr-gz-OLM"/>
+                            <constraint firstItem="13a-eW-8BI" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="KTR-Fn-q74"/>
+                            <constraint firstItem="TFZ-EC-2DQ" firstAttribute="baseline" secondItem="jFV-IF-oqE" secondAttribute="baseline" type="default" id="QIa-VF-5EM"/>
+                            <constraint firstItem="Ofb-2g-JKD" firstAttribute="top" secondItem="3" secondAttribute="top" constant="106" id="Tbd-ka-Fz6"/>
+                            <constraint firstItem="wFL-gw-tNA" firstAttribute="top" secondItem="3" secondAttribute="top" constant="172" id="Tdc-kT-hWK"/>
+                            <constraint firstItem="jFV-IF-oqE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="245" id="aio-yy-I5y"/>
+                            <constraint firstItem="Mrf-GH-Xok" firstAttribute="baseline" secondItem="Ofb-2g-JKD" secondAttribute="baseline" type="default" id="c4A-U7-rFg"/>
+                            <constraint firstItem="Ofb-2g-JKD" firstAttribute="trailing" secondItem="cZV-PW-h2B" secondAttribute="trailing" type="default" id="eyF-cB-A41"/>
+                            <constraint firstItem="Mrf-GH-Xok" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="fuS-am-5XD"/>
+                            <constraint firstItem="wFL-gw-tNA" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="fwj-0j-p0b"/>
+                            <constraint firstItem="cZV-PW-h2B" firstAttribute="top" secondItem="3" secondAttribute="top" constant="42" id="jnN-pt-JsI"/>
+                            <constraint firstItem="H2l-6j-cKT" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="ljZ-tn-ld7"/>
+                            <constraint firstItem="7C3-tB-okE" firstAttribute="baseline" secondItem="wFL-gw-tNA" secondAttribute="baseline" type="default" id="lvr-vX-GlM"/>
+                            <constraint firstItem="7C3-tB-okE" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="shs-iI-zyr"/>
+                            <constraint firstItem="H2l-6j-cKT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="7" id="vKf-fp-a3l"/>
+                            <constraint firstItem="TFZ-EC-2DQ" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="vm6-RS-2Xd"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -82,6 +149,17 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="MViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onAlert:" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
