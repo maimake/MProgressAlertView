@@ -32,6 +32,16 @@
 
 @implementation MProgressAlertView
 
+
+-(void)setProgressHidden:(BOOL)progressHidden
+{
+    if (_progressHidden != progressHidden) {
+        _progressHidden = progressHidden;
+        self.progressLabel.hidden = self.progressView.hidden = _progressHidden;
+    }
+}
+
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -45,7 +55,7 @@
 -(id)initWithTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...
 {
     //super init
-    if(!(!cancelButtonTitle && !otherButtonTitles))//有button
+    if(cancelButtonTitle || otherButtonTitles)//有button
         message = message ? [message stringByAppendingString:@"\n\n"] : @"\n";
     self = [super initWithTitle:title message:message delegate:delegate cancelButtonTitle:cancelButtonTitle otherButtonTitles:otherButtonTitles, nil];
     

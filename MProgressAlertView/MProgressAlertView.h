@@ -32,6 +32,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MProgressAlertView : UIAlertView
+@property (nonatomic, assign) BOOL progressHidden;
+
 @property (nonatomic, retain) UIProgressView* progressView;
 @property (nonatomic, retain) UILabel* progressLabel;
 @end
