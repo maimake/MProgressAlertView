@@ -84,4 +84,12 @@
     self.progressAlertView = nil;
 }
 
+
+-(void)dealloc
+{
+    self.progressAlertView = nil;
+    self.timer = nil;
+    [super dealloc];
+}
+
 @end
