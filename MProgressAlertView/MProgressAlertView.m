@@ -129,4 +129,11 @@
     self.progressLabel.center = CGPointMake(self.bounds.size.width - 50, offset);
 }
 
+-(void)dealloc
+{
+    self.progressLabel = nil;
+    self.progressView = nil;
+    [super dealloc];
+}
+
 @end
